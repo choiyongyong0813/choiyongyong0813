@@ -1,8 +1,8 @@
-- 👋 Hi, I’m 최재용
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+- 👋 최재용
+- 👀 경기도 거주
+- 🌱 99년생
+- 💞️ 백엔드 공부중
+
 
 <!---
 choiyongyong0813/choiyongyong0813 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
