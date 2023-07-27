@@ -1,0 +1,434 @@
+<html>
+<head>
+<style type="text/css">
+a:link {color:#FFFFFF}
+a:visited {color:#FFFFFF}
+a:hover {color:#00FF00}
+a.m1 {font-size : 9pt; text-decoration : none; COLOR: #000000}
+a.m1:visited {font-size : 9pt; text-decoration : none; COLOR: #000000}
+a.m1:active {font-size : 9pt; text-decoration : none; COLOR: #000000}
+a.m1:hover {font-size : 9pt; text-decoration : none; COLOR: #FF3300}
+a.m2 {font-size : 10pt; text-decoration : none}
+a.m2:visited {font-size : 10pt; text-decoration : none}
+a.m2:active {font-size : 10pt; text-decoration : none}
+a.m2:hover {font-size : 10pt; text-decoration : none}
+.menu {color: #003399; font-size: 9pt; font-weight: bold; }
+.t1 {font-size : 9pt; line-HEIGHT:140%;}
+.t2 {font-size : 10pt;}
+.TXTFLD {FONT-SIZE:9pt; COLOR:#000000; BORDER:1x SOLID #000000}
+.TXTFLD1 {FONT-SIZE:9pt; COLOR:#000000; BORDER:0 SOLID #000000}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+
+<body>
+
+<table width="80%" border="0" cellspacing="0" cellpadding="2" align="center">
+	
+	<tr bgcolor="#00008b" valign="middle">
+		<td height="25" class="t1" align="center"><b><font size="3" color="#FFFFFF">◇◇◇ Servlet API ◇◇◇</font></b></td>
+	</tr>
+    
+	<tr>
+		<td height="20" ></td>
+	</tr>
+	
+	<tr>
+		<td>
+		<table width="100%" align="center" border="1" cellspacing="0" cellpadding="3"  bordercolordark="white" bordercolorlight="#db7093">
+			<tr bgcolor="#db7093">
+				<td align="center" height="22" class="t1"><b><font size="2" color="#FFFFFF">&lt;&lt;&nbsp;javax.servlet.Servlet&nbsp;&gt;&gt;</font></b>
+				</td>
+			</tr>
+
+			<tr bgcolor="#ffe4e1">
+				<td align="center" class="t1"><font color="#0000FF">
+				서블릿을 관리하고, 클라이언트와 통신할 수 있는 메소드들을 지원한다.<br>
+				모든 서블릿 프로그램은 이 인터페이스를 직접 혹은 간접적으로 임플리먼츠한다.</font>
+				</td>
+			</tr>
+
+			<tr>
+				<td align="left" class="t1">
+
+				<font color="#0000FF">♠ void init(ServletConfig config) :</font> 서블릿이 메모리에 로딩되고, 서블릿이 초기화되기 위해 한번만 호출된다. 서블릿에 필요한 초기화 작업이 이루어진다.<br>
+				
+				<font color="#0000FF">♠ void service(ServletRequest req, ServletResponse res) :</font> 클라이언트의 요청이 있을 때마다 호출된다.<br>
+
+				<font color="#0000FF">♠ void distroy() :</font> 서블릿이 언로드될 때 서블릿엔진(자카르타톰캣)에 의해 호출된다. 서블릿이 사용하던 모든 자원을 해제 하도록 하자.<br>
+
+				<font color="#0000FF">♠ ServletConfig getServletConfig() :</font> ServletConfig 객체를 얻을 수 있다. ServletConfig 객체에서 서블릿 초기화에 관련된 변수들을 얻을 수 있다.<br>
+
+				</td>
+			</tr>
+
+		</table>
+		</td>
+	</tr>
+
+	<tr>
+		<td height="20" ></td>
+	</tr>
+
+	<tr>
+		<td>
+		<table width="100%" align="center" border="1" cellspacing="0" cellpadding="3"  bordercolordark="white" bordercolorlight="#008080">
+			<tr bgcolor="#008080">
+				<td align="center" height="22" class="t1"><b><font size="2" color="#FFFFFF">javax.servlet.GenericServlet</font></b>
+				</td>
+			</tr>
+
+			<tr bgcolor="#add8e6">
+				<td align="center" class="t1"><font color="#000080">
+				프로토콜에 무관한 기본적인 서비스 기능을 제공하는 클래스이다.<br>
+				Servlet과 ServletConfig 인터페이스를 임플리먼츠하였다.</font>
+				</td>
+			</tr>
+
+			<tr>
+				<td align="left" class="t1">
+
+				<font color="#0000FF">♠ String getInitParameter(String name) :</font> name에 해당하는 서블릿의 초기화 파라메터의 값을 얻을 수 있다.<br>
+				
+				<font color="#0000FF">♠ Enumeration getInitParameterNames() :</font> 서블릿의 초기화 파라메터의 이름들을 얻을 수 있다.<br>
+
+				<font color="#0000FF">♠ ServletConfig getServletConfig() :</font> ServletConfig 객체를 얻을 수 있다. ServletConfig로부터는 초기화 파라메터에 관련된 정보를 얻을 수 있다.<br>
+
+				<font color="#0000FF">♠ ServletContext getServletContext() :</font> ServletContext 객체를 얻을 수 있다. ServletContext로부터는 서블릿 엔진에 관련된 정보를 얻을 수 있다.<br>
+
+				<font color="#0000FF">♠ abstract void service() :</font> 클라이언트의 요청에 따라 호출되는 서비스 함수를 반드시 오버라이딩 하여야 한다.<br>
+
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+
+	<tr>
+		<td height="20" ></td>
+	</tr>
+
+	<tr>
+		<td>
+		<table width="100%" align="center" border="1" cellspacing="0" cellpadding="3"  bordercolordark="white" bordercolorlight="#db7093">
+			<tr bgcolor="#db7093">
+				<td align="center" height="22" class="t1"><b><font size="2" color="#FFFFFF">&lt;&lt;&nbsp;javax.servlet.ServletConfig&nbsp;&gt;&gt;</font></b>
+				</td>
+			</tr>
+
+			<tr bgcolor="#ffe4e1">
+				<td align="center" class="t1"><font color="#000080">
+				서블릿이 처음 시작될 때 서블릿 엔진(자카르타톰캣)은 초기화에 관련된 정보를 이놈을 통해서 전달한다.<br>
+				서블릿은 init() 메소드에서 초기값을 받아 들여야 한다.</font>
+				</td>
+			</tr>
+
+			<tr>
+				<td align="left" class="t1">
+
+				<font color="#0000FF">♠ String getInitParameter(String name) :</font> name에 해당하는 서블릿의 초기화 파라메터의 값을 얻을 수 있다.<br>
+				
+				<font color="#0000FF">♠ Enumeration getInitParameterNames() :</font> 서블릿의 초기화 파라메터의 이름들을 얻을 수 있다.<br>
+
+				<font color="#0000FF">♠ ServletContext getServletContext() :</font> ServletContext 객체를 얻을 수 있다. ServletContext로부터는 서블릿 엔진에 관련된 정보를 얻을 수 있다.<br>
+
+				</td>
+			</tr>
+
+		</table>
+		</td>
+	</tr>
+
+	<tr>
+		<td height="20" ></td>
+	</tr>
+
+	<tr>
+		<td>
+		<table width="100%" align="center" border="1" cellspacing="0" cellpadding="3"  bordercolordark="white" bordercolorlight="#db7093">
+			<tr bgcolor="#db7093">
+				<td align="center" height="22" class="t1"><b><font size="2" color="#FFFFFF">&lt;&lt;&nbsp;javax.servlet.ServletContext&nbsp;&gt;&gt;</font></b>
+				</td>
+			</tr>
+
+			<tr bgcolor="#ffe4e1">
+				<td align="center" class="t1"><font color="#000080">
+				서블릿과 서블릿간 또는 서블릿엔진(자카르타톰캣)간의 통신할 수 있는 방법을 제공한다.<br>
+				ServletConfig 객체의 getServletContext()메소들를 이용해서 얻을 수 있다.<br>
+				데이터를 저장하고, 검색할 수 있는 메소드를 가지고 있기 때문에 ServletContext를 공유하는 서블릿들에서는 자유롭게 접근할 수 있다.</font>
+				</td>
+			</tr>
+
+			<tr>
+				<td align="left" class="t1">
+
+				<font color="#0000FF">♠ void setAttribute(String name, Object value) :</font> 데이터를 이름과 값의 쌍으로 저장한다.<br>
+				
+				<font color="#0000FF">♠ Object getAttribute(String name) :</font> 이름을 이용해서 저장된 데이터를 얻을 수 있다.<br>
+
+				<font color="#0000FF">♠ void removeAttribute(String name) :</font> 이름을 이용해서 저장된 데이터를 삭제할 수 있다.<br>
+
+				<font color="#0000FF">♠ RequestDispatcher getRequestDispatcher(String path) :</font> 주어진 패스를 위한 RequestDispatcher 객체를 얻을 수 있다.<br>
+
+				<font color="#0000FF">♠ void log(String msg) :</font> 로그파일에 메세지를 기록한다.<br>
+
+				</td>
+			</tr>
+
+		</table>
+		</td>
+	</tr>
+
+	<tr>
+		<td height="20" ></td>
+	</tr>
+
+	<tr>
+		<td>
+		<table width="100%" align="center" border="1" cellspacing="0" cellpadding="3"  bordercolordark="white" bordercolorlight="#db7093">
+			<tr bgcolor="#db7093">
+				<td align="center" height="22" class="t1"><b><font size="2" color="#FFFFFF">&lt;&lt;&nbsp;javax.servlet.RequestDispatcher&nbsp;&gt;&gt;</font></b>
+				</td>
+			</tr>
+
+			<tr bgcolor="#ffe4e1">
+				<td align="center" class="t1"><font color="#000080">
+				클라이언트의 요청을 다른 자원(HTML, 서블릿, JSP 등)으로 전달하거나, 다른 서블릿의 결과를 자신의 출력 결과에 포함하는 역할을 한다.<br>
+				ServletContext의 getRequestDispatcher() 메소드와 ServletRequest의 getRequestDispatcher() 메소드를 통해서 얻을 수 있다.</font>
+				</td>
+			</tr>
+
+			<tr>
+				<td align="left" class="t1">
+
+				<font color="#0000FF">♠ void forward(ServletRequest req, ServletResponse res) :</font> 클라이언트의 요청을 다른 자원으로 전달한다.<br>
+				
+				<font color="#0000FF">♠ void include(ServletRequest req, ServletResponse res) :</font> 다른 자원의 내용을 HttpServletResponse에 포함시킨다.<br>
+
+				</td>
+			</tr>
+
+		</table>
+		</td>
+	</tr>
+
+	<tr>
+		<td height="20" ></td>
+	</tr>
+
+	<tr>
+		<td>
+		<table width="100%" align="center" border="1" cellspacing="0" cellpadding="3"  bordercolordark="white" bordercolorlight="#008080">
+			<tr bgcolor="#008080">
+				<td align="center" height="22" class="t1"><b><font size="2" color="#FFFFFF">javax.servlet.http.HttpServlet</font></b>
+				</td>
+			</tr>
+
+			<tr bgcolor="#add8e6">
+				<td align="center" class="t1"><font color="#000080">
+				HTTP 서비스를 위한 기본적인 기능을 제공하는 클래스로, GenericServlet로부터 상속받았다.</font>
+				</td>
+			</tr>
+
+			<tr>
+				<td align="left" class="t1">
+
+				<font color="#0000FF">♠ void service(HttpServletRequest req, HttpServletResponse res) :</font> 클라이언트의 요청방식에 맞게 doGet(), doPost()를 호출한다.<br>
+
+				<font color="#0000FF">♠ void doGet(HttpServletRequest req, HttpServletResponse res) :</font> GET 방식을 처리하기 위해 서블릿엔진에 의해 호출된다.<br>
+
+				<font color="#0000FF">♠ void doPost(HttpServletRequest req, HttpServletResponse res) :</font> POST 방식을 처리하기 위해 서블릿엔진에 의해 호출된다.<br>				
+
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+
+	<tr>
+		<td height="20" ></td>
+	</tr>
+
+	<tr>
+		<td>
+		<table width="100%" align="center" border="1" cellspacing="0" cellpadding="3"  bordercolordark="white" bordercolorlight="#db7093">
+			<tr bgcolor="#db7093">
+				<td align="center" height="22" class="t1"><b><font size="2" color="#FFFFFF">&lt;&lt;&nbsp;javax.servlet.ServletRequest&nbsp;&gt;&gt;</font></b>
+				</td>
+			</tr>
+
+			<tr bgcolor="#ffe4e1">
+				<td align="center" class="t1"><font color="#000080">
+				클라이언트의 요청 정보를 가지고 있는 인터페이스이다.<br>
+				서블릿 엔진은 클라이언트의 요청을 ServletRequest의 객체로 변환하여 서블릿의 service() 메소드의 매개변수로 전달한다.</font>
+				</td>
+			</tr>
+
+			<tr>
+				<td align="left" class="t1">
+
+				<font color="#0000FF">♠ String getParameter(String name) :</font> 클라이언트의 요청에 포함되어 있는 주어진 이름의 파라메터 값을 얻을 수 있다. 값이 없는 경우에는 null을 리턴한다.<br>
+				
+				<font color="#0000FF">♠ Enumeration getParameterNames() :</font> 클라이언트의 요청에 포함되어 있는 모든 파라메터 이름들을 얻을 수 있다.<br>
+
+				<font color="#0000FF">♠ String[] getParameterValues(String name) :</font> 주어진 이름의 파라메터 값을 모두 리턴한다. 동일한 이름에 여러개의 값이 있는 경우 사용<br>
+
+				<font color="#0000FF">♠ ServletInputStream getInputStream() :</font> 클라이언트 요청의 엔터티 바디에 있는 바이너리 데이터를 읽기 위한 스트림을 얻을 수 있다.<br>
+
+				<font color="#0000FF">♠ BufferedReader getReader() :</font> 클라이언트 요청의 엔터티 바디에 있는 문자를 읽기 위한 BufferedReader를 얻을 수 있다.<br>
+
+				<font color="#0000FF">♠ String getCharacterEncoding() :</font> 문자 데이터의 인코딩 방식을 얻을 수 있다.<br>
+
+				<font color="#0000FF">♠ String getProtocol() :</font> 클라이언트가 사용한 프로토콜 정보를 HTTP/1.1과 같이 protocol/majorVersion.minorVersion 형태로 얻을 수 있다.<br>
+
+				<font color="#0000FF">♠ String getServerName() :</font> 클라이언트의 요청을 받는 서버 이름을 얻을 수 있다.<br>
+
+				<font color="#0000FF">♠ String getServerPort() :</font> 클라이언트의 요청을 받는 서버 의 포트번호를 얻을 수 있다.<br>
+
+				<font color="#0000FF">♠ String getRemoteAddr() :</font> 클라이언트의 IP주소를 얻을 수 있다.<br>
+
+				<font color="#0000FF">♠ String getRemoteHost() :</font> 클라이언트의 이름을 얻을 수 있다.<br>
+
+				<font color="#0000FF">♠ RequestDispatcher getRequestDispatcher(String path) :</font> 주어진 패스로 클라이언트의 요청을 전달할 RequestDispatcher 객체을 얻을 수 있다.<br>
+
+				</td>
+			</tr>
+
+		</table>
+		</td>
+	</tr>
+
+	<tr>
+		<td height="20" ></td>
+	</tr>
+
+	<tr>
+		<td>
+		<table width="100%" align="center" border="1" cellspacing="0" cellpadding="3"  bordercolordark="white" bordercolorlight="#db7093">
+			<tr bgcolor="#db7093">
+				<td align="center" height="22" class="t1"><b><font size="2" color="#FFFFFF">&lt;&lt;&nbsp;javax.servlet.http.HttpServletRequest&nbsp;&gt;&gt;</font></b>
+				</td>
+			</tr>
+
+			<tr bgcolor="#ffe4e1">
+				<td align="center" class="t1"><font color="#000080">
+				ServletRequest 인터페이스로부터 상속받은 인터페이스이다.<br>
+				HTTP 프로토콜에 사용되며, HttpServlet 클래스의 service() 메소드의 매개변수로 전달된다.</font>
+				</td>
+			</tr>
+
+			<tr>
+				<td align="left" class="t1">
+
+				<font color="#0000FF">♠ String getHeader(String name) :</font> 주어진 이름의 요청헤더의 값을 얻을 수 있다.<br>
+
+				<font color="#0000FF">♠ Enumeration getHeaderNames() :</font> 요청에 포함된 모든 헤더 이름들을 얻을 수 있다.<br>
+
+				<font color="#0000FF">♠ String getMethod() :</font> HTTP 요청 방식(GET, POST, PUT,..) 을 얻을 수 있다.<br>
+
+				<font color="#0000FF">♠ String getQueryString() :</font> 쿼리스트링을 얻을 수 있다.<br>
+
+				<font color="#0000FF">♠ String getRequestURI() :</font> URI 값을 얻을 수 있다.<br>
+
+				<font color="#0000FF">♠ Cookie[] getCookies() :</font> 클라이언트가 요청과 함께 전달한 쿠키들을 얻을 수 있다.<br>
+
+				<font color="#0000FF">♠ HttpSession getSession(boolean create) :</font> 현재 세션을 얻을 수 있거나 세션이 없는 경우 create가 true이면 새로운 세션을 생성한다.<br>
+
+				<font color="#0000FF">♠ HttpSession getSession() :</font> 현재 세션을 얻을 수 있다.<br>
+
+				<font color="#0000FF">♠ boolean isRequestedSessionIdValid() :</font> 세션이 유효한가를 알아본다.<br>
+
+				<font color="#0000FF">♠ String getRequestSessionId() :</font> 클라이언트의 세션ID를 얻을 수 있다.<br>
+				
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+
+	<tr>
+		<td height="20" ></td>
+	</tr>
+
+	<tr>
+		<td>
+		<table width="100%" align="center" border="1" cellspacing="0" cellpadding="3"  bordercolordark="white" bordercolorlight="#db7093">
+			<tr bgcolor="#db7093">
+				<td align="center" height="22" class="t1"><b><font size="2" color="#FFFFFF">&lt;&lt;&nbsp;javax.servlet.ServletResponse&nbsp;&gt;&gt;</font></b>
+				</td>
+			</tr>
+
+			<tr bgcolor="#ffe4e1">
+				<td align="center" class="t1"><font color="#000080">
+				서블릿이 클라이언트의 요청을 처리하고, 클라이언트에 응답을 보내기 위해 사용한다.<br>
+				서블릿 엔진은 자동적으로 ServletResponse 인터페이스를 임플리먼츠한 객체를 service() 메소드의 매개변수로 제공한다.<font>
+				</td>
+			</tr>
+
+			<tr>
+				<td align="left" class="t1">
+
+				<font color="#0000FF">♠ void setContentType(String type) :</font> 클라이언트로 전달되는 내용의 MIME 타입과 ENCTYPE을 설정한다.<br>
+
+				<font color="#0000FF">♠ void setContentLength(int length) :</font> 클라이언트로 전달되는 내용의 크기를 설정한다.<br>
+
+				<font color="#0000FF">♠ ServletOutputStream getOutputStream() :</font> 응답에 바이너리 데이터를 전달하기 위한 출력스트림을 얻을 수 있다.<br>
+
+				<font color="#0000FF">♠ PrintWriter getWriter() :</font> 응답에 문자 데이터를 전달하기 위한 PrintWriter를 얻을 수 있다.<br>
+
+				<font color="#0000FF">♠ boolean isCommitted() :</font> 응답이 Committed 되었는지의 여부를 알아볼 수 있다.<br>
+
+				<font color="#0000FF">♠ void setBufferSize(int size) :</font> 버퍼의 사이즈를 지정할 수 있다.<br>
+
+				<font color="#0000FF">♠ void reset() :</font> 버퍼에 있는 데이터를 지워버린다.<br>
+
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+
+	<tr>
+		<td height="20" ></td>
+	</tr>
+
+	<tr>
+		<td>
+		<table width="100%" align="center" border="1" cellspacing="0" cellpadding="3"  bordercolordark="white" bordercolorlight="#db7093">
+			<tr bgcolor="#db7093">
+				<td align="center" height="22" class="t1"><b><font size="2" color="#FFFFFF">&lt;&lt;&nbsp;javax.servlet.http.HttpServletResponse&nbsp;&gt;&gt;</font></b>
+				</td>
+			</tr>
+
+			<tr bgcolor="#ffe4e1">
+				<td align="center" class="t1"><font color="#000080">
+				ServletResponse 인터페이스로부터 상속받은 인터페이스이다.<br>
+				HTTP의 응답을 클라이언트에 전송하는 역할을 한다.<font>
+				</td>
+			</tr>
+
+			<tr>
+				<td align="left" class="t1">
+
+				<font color="#0000FF">♠ void addCookie(Cookie cookie) :</font> 응답에 쿠키를 추가한다.<br>
+
+				<font color="#0000FF">♠ void sendRedirect(String url) :</font> 주어진 URL로 리다이렉트하도록 한다.<br>
+
+				<font color="#0000FF">♠ void setHeader(String name, String value) :</font> 응답헤더에 필드와 값을 설정한다.<br>
+
+				<font color="#0000FF">♠ void setIntHeader(String name, int value) :</font> 응답헤더에 필드와 정수값을 설정한다.<br>
+
+				<font color="#0000FF">♠ void setStatus(int statuscode) :</font> 응답라인에 상태코드를 설정한다.<br>
+
+				<font color="#0000FF">♠ void sendError(int statuscode) :</font> 클라이언트에 상태코드와 디폴트 메세지를 전송한다.<br>
+
+				</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+
+</table>
+
+</body>
+</html>

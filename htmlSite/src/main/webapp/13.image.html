@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8" />	
+	<title>image 요소 연습</title>
+</head>
+<!-- 
+	img : 이미지태그
+	  - src속성 : image uri
+ -->
+<body>
+	<h2>절대경로[http://~ 로시작하는경로]</h2><hr>
+	<h4>다른 싸이트에있는 이미지</h4>
+	<div>
+		<img src="https://image.istarbucks.co.kr/upload/store/skuimg/2023/06/[9300000004638]_20230629143403199.jpg" width="50" height="50">
+		<img src="https://image.istarbucks.co.kr/upload/store/skuimg/2023/06/[9300000004638]_20230629143403199.jpg" width="50" height="50">
+		<img src="https://image.istarbucks.co.kr/upload/store/skuimg/2023/06/[9300000004638]_20230629143403199.jpg" width="50" height="50">
+		<img src="https://image.istarbucks.co.kr/upload/store/skuimg/2023/06/[9300000004638]_20230629143403199.jpg" width="50" height="50">
+	</div>
+	<h4>같은 싸이트에있는 이미지</h4>
+	<div>
+		<img src="http://localhost/HtmlSite/image/penguin1.gif" width="50" height="50">
+		<img src="http://localhost/HtmlSite/image/penguin2.gif" width="50" height="50">
+		<img src="http://localhost/HtmlSite/image/penguin3.gif" width="50" height="50">
+		<img src="http://localhost/HtmlSite/image/car1.jpg" width="50" height="50">
+		<img src="http://localhost/HtmlSite/image/car2.jpg" width="50" height="50">
+		
+	</div>5
+	<hr>
+	<h2>상대경로[http://~ 로시작하지않는경로]</h2><hr>
+	<h4>같은 싸이트에있는 이미지-->기준경로 [http://127.0.0.1/servletSite/html2/]</h4>
+	<div>
+		<img src="./penguin1.glf" width="50" height="50">
+		<img src="./male.jpg" width="50" height="50">
+		<img src="./image/penguin1.gif" width="50" height="50">
+		<img src="./image/penguin2.gif" width="50" height="50">
+		<img src="./image/penguin3.gif" width="50" height="50">
+		<img src="./album.jpg" width="50" height="50">
+		
+	</div>
+</body>
+</html>

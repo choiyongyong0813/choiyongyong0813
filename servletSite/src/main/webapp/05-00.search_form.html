@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>검색</h3><hr/>
+<!-- 
+form tag
+ - 요청시 전송되는 데이타를 묶어주는 단위
+ - form 안에 있는 데이타들은 요청시 같이 전송된다.
+ - action:요청할 URL(서블릿URL)
+ - method:요청방법
+ -->
+<form action="./search.do" method="get">
+	<input type="text" name="searchkeyword" >
+	<!-- 
+	- 파라메타이름은 input element의 name속성과일치
+		   <input type="text" name="searchkeyword">
+		    - search.do?searchkeyword=java   
+	 -->
+	<input type="submit" value="검색">
+	<!-- 
+	<!-- 
+	<<submit button >>
+		form안에 존재해야하며 버튼클릭시에 자기가 속해있는 폼의
+		데이타모두를 가지고 메쏘드에기술된 방식(GET)으로 
+		action url 에 기술되어있는 서블릿으로 요청한다
+	 -->
+</form>
+
+<!-- 
+	<<< query string >>>
+		- HTTP에서 클라이언트가 서버로 요청시데이타를 전송하는 문자열 
+  		- 형식:name1=value1&name2=value2
+  		- ex> name=kim&phone=1234&address=seoul
+  
+	  1.GET  요청방식 : request.do?
+	    ex> /servletSite/request.do?name=kim&phone=1234&address=kyunggi
+	    
+	    			----------------------------------------------------------------------------|
+	    요청라인  	|GET /servletSite/request.do?name=kim&phone=1234&address=kyunggi HTTP/1.1	|	
+	    요청헤더  	|HOST:192.168.15.31															|
+	    ...			|...																		|
+	    			|---------------------------------------------------------------------------|
+	    요청바디	|없다																		|
+	    			----------------------------------------------------------------------------|
+	    
+	  2.POST 요청방식 : request.do  
+	  
+	    			----------------------------------------------------------------------------|			
+	    요청라인  	|POST /servletSite/request.do HTTP/1.1										|						
+	    요청헤더  	|HOST:192.168.15.31															|
+	    ...			|...																		|
+	    			|---------------------------------------------------------------------------|
+	    요청바디	|name=kim&phone=1234&address=kyunggi										|								
+	     			----------------------------------------------------------------------------|
+ -->
+
+
+</body>
+</html>

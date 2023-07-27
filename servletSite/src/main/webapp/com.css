@@ -1,0 +1,12 @@
+			.TXTFLD
+		    {
+		    	FONT-SIZE:9pt;
+		    	COLOR:#000000;
+		    	BORDER:1px SOLID #000000;
+		    }
+			.TXTFLD1
+		    {
+		    	FONT-SIZE:9pt;
+		    	COLOR:#000000;
+		    	BORDER:1px DOUBLE #FF0000;
+		    }

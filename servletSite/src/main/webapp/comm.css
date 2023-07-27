@@ -1,0 +1,92 @@
+@CHARSET "UTF-8";
+
+body {
+	background-color:#BBBBBB ;
+	width: 100%;
+	height: 100%;
+	margin-top: 50;
+	font-size: 20pt;
+}
+
+a:link {
+	color: #FFFFFF
+}
+
+a:visited {
+	color: #FFFFFF
+}
+
+a:hover {
+	color: #00FF00
+}
+
+a.m1 {
+	font-size: 9pt;
+	text-decoration: underline;
+	COLOR: #0000FF
+}
+
+a.m1:visited {
+	font-size: 9pt;
+	text-decoration: underline;
+	COLOR: #0000FF
+}
+
+a.m1:active {
+	font-size: 9pt;
+	text-decoration: underline;
+	COLOR: #0000FF
+}
+
+a.m1:hover {
+	font-size: 9pt;
+	text-decoration: underline;
+	COLOR: #FF3300
+}
+
+a.m2 {
+	font-size: 10pt;
+	text-decoration: none
+}
+
+a.m2:visited {
+	font-size: 10pt;
+	text-decoration: none
+}
+
+a.m2:active {
+	font-size: 10pt;
+	text-decoration: none
+}
+
+a.m2:hover {
+	font-size: 10pt;
+	text-decoration: none
+}
+
+.menu {
+	color: #ffffff;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+.t1 {
+	font-size: 9pt;
+	line-HEIGHT: 140%;
+}
+
+.t2 {
+	font-size: 10pt;
+}
+
+.TXTFLD {
+	FONT-SIZE: 9pt;
+	COLOR: #000000;
+	BORDER: 1x SOLID #000000
+}
+
+.TXTFLD1 {
+	FONT-SIZE: 9pt;
+	COLOR: #000000;
+	BORDER: 0 SOLID #000000
+}

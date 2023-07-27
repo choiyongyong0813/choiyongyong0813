@@ -1,0 +1,4 @@
+Hello text 1(static web resource)!!!!!!!!!
+Hello text 2(static web resource)!!!!!!!!!
+Hello text 3(static web resource)!!!!!!!!!
+Hello text 4(static web resource)!!!!!!!!!
