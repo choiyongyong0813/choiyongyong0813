@@ -36,7 +36,7 @@ public class AnnotationMappingServlet extends HttpServlet {
 		out.println("<title>어노테이션매핑서블릿</title>");
 		out.println("<meta charset='UTF-8'>");
 		out.println("</head>");
-		out.println("<body>");
+		out.println("<body>"); 
 		out.println("<p>AnnotationMappingServlet[Dynamic Resource] 어노테이션매핑</p><hr>");
 		out.println("web.xml대신에 annotation[@] 사용");
 		out.println("</body>");
