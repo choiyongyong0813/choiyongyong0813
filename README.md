@@ -9,7 +9,7 @@
  ![](	https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
  ![](	https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
 
-[![Tistory's Badge](https://github-readme-tistory-card.vercel.app/api/badge?name={insert_name}&theme={insert_theme})](https://jaejae0813.tistory.com/)
+[![Tistory's Badge](https://github-readme-tistory-card.vercel.app/api/badge?name=재용의코딩공부&theme={insert_theme})](https://jaejae0813.tistory.com/)
 
 
 
