@@ -1,6 +1,6 @@
 
 
-🖥 MySkills
+##🖥 MySkills
 
  ![java](	https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 	![js](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white)
@@ -9,6 +9,7 @@
  ![](	https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
  ![](	https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
 
+##✨About me
 [![Tistory's Badge](https://github-readme-tistory-card.vercel.app/api/badge?name=재용의코딩공부&theme={insert_theme})](https://jaejae0813.tistory.com/)
 [![Notion](https://img.shields.io/badge/Notion-Jae_Yong_Choi-6eff559abdf04b82afc33d90008f7bc4?style=for-the-badge&logo=notion)](https://www.notion.so/Jae-Yong-Choi-6eff559abdf04b82afc33d90008f7bc4)
 
