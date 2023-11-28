@@ -7,8 +7,11 @@
  ![1](	https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
  ![1](	https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
  ![](	https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+ [![JPA](https://img.shields.io/badge/JPA-2C3E50?style=for-the-badge&logo=java&logoColor=white)](https://docs.oracle.com/javaee/7/api/javax/persistence/package-summary.html)
+ [![REST API](https://img.shields.io/badge/REST%20API-009688?style=for-the-badge&logo=rest&logoColor=white)](https://en.wikipedia.org/wiki/Representational_state_transfer)
+[![Oracle DB](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)](https://www.oracle.com/)
  ![](	https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
- [![Oracle DB](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)](https://www.oracle.com/)
+
 
 
 <h2>✨About me </h2>
