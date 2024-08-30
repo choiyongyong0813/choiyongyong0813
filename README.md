@@ -26,7 +26,7 @@
 <h2>✨About me </h2>
 
 [![Tistory's Badge](https://github-readme-tistory-card.vercel.app/api/badge?name=재용의코딩공부&theme={insert_theme})](https://jaejae0813.tistory.com/)
-[![Notion](https://img.shields.io/badge/Notion-Jae_Yong_Choi-6eff559abdf04b82afc33d90008f7bc4?style=for-the-badge&logo=notion)](https://www.notion.so/Jae-Yong-Choi-6eff559abdf04b82afc33d90008f7bc4)
+<!--[![Notion](https://img.shields.io/badge/Notion-Jae_Yong_Choi-6eff559abdf04b82afc33d90008f7bc4?style=for-the-badge&logo=notion)](https://www.notion.so/Jae-Yong-Choi-6eff559abdf04b82afc33d90008f7bc4) -->
 
 </div>
 
